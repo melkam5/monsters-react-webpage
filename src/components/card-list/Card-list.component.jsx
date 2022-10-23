@@ -6,12 +6,11 @@ export const CardList = (props)=>{
     return(
         <div className="card-list">
             {
-            (props.monster.filter((item)=> item.name.includes(props.searchField)
+            (props.monster.filter((item)=> item.name.toLowerCase().includes(props.searchField)
             )).map(item => {
                 return (
                     <Card key ={item.id} monster = {item}/>
                 )})
-            
             }
         </div>
     )
