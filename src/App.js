@@ -21,6 +21,7 @@ componentDidMount(){
   render(){
     return(
           <div className="App">
+            <h1>Monsters Rolodex</h1>
             <Search 
             searchHandler={(e)=>{ this.setState({searchField : e.target.value})}}
             monster={this.state.monster}
